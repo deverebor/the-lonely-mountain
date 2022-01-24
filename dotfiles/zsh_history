@@ -1,0 +1,1080 @@
+: 1640887009:0;git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1\
+
+: 1640887016:0;ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"\
+
+: 1640887031:0;gedit ~/.zshrc
+: 1640887311:0;sh -c "$(curl -fsSL https://git.io/zinit-install)"
+: 1640887442:0;gedit ~/.zshrc
+: 1640887491:0;sh -c "$(curl -fsSL https://git.io/zinit-install)"
+: 1640887501:0;gedit ~/.zshrc
+: 1640887592:0;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+: 1640887610:0;gedit ~/.zshrc
+: 1640887628:0;nvm install --lts
+: 1640887635:0;nvm
+: 1640887639:0;export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"\
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+: 1640887641:0;nvm
+: 1640887649:0;nvm install --lts
+: 1640887699:0;ssh-keygen -t ed25519 -C "lucasp.sdev@gmail.com"
+: 1640887715:0;eval "$(ssh-agent -s)"
+: 1640887722:0;ssh-add ~/.ssh/id_ed25519
+: 1640887776:0;cd ~/.ssh
+: 1640887779:0;ls -la
+: 1640887786:0;cat id_ed25519.pub\
+
+: 1640887809:0;cd ~
+: 1640887827:0;curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+: 1640887837:0;echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null\
+
+: 1640887853:0;sudo apt update -y && sudo apt install gh -y
+: 1640887884:0;gh login
+: 1640887890:0;gh
+: 1640887959:0;sudo apt-get install \\
+    ca-certificates \\
+    curl \\
+    gnupg \\
+    lsb-release
+: 1640887971:0;echo \\
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \\
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+: 1640887976:0;sudo apt-get update
+: 1640887988:0;sudo apt-get install docker-ce docker-ce-cli containerd.io
+: 1640888156:0;cd Downloads
+: 1640888158:0;git@github.com:vinceliuice/Graphite-gtk-theme.git
+: 1640888165:0;git clone git@github.com:vinceliuice/Graphite-gtk-theme.git
+: 1640888192:0;cd Graphite-gtk-theme
+: 1640888234:0;sudo ./install.sh -s compact --tweaks rimless
+: 1640888289:0;sudo add-apt-repository ppa:papirus/papirus\
+
+: 1640888306:0;sudo apt-get update\
+
+: 1640888314:0;sudo apt-get install papirus-icon-theme\
+
+: 1640888499:0;sudo apt install gnome-tweaks tweak
+: 1640888555:0;cd ~
+: 1640888565:0;sudo apt install breeze-cursor-theme
+: 1640896198:0;gedit ~/.zshrc
+: 1640896291:0;cd Documentos/GitHub
+: 1640896364:0;cd tdb
+: 1640896384:0;gh repo clone tdb-devs/minha-cesta-app
+: 1640896389:0;gh auth login
+: 1640896458:0;gh repo clone tdb-devs/minha-cesta-app
+: 1640896502:0;gh repo clone tdb-devs/minha-cesta-empresario
+: 1640896528:0;cd minha-cesta-empresario
+: 1640896549:0;sudo ./docker.sh
+: 1640897169:0;code .
+: 1640897544:0;git checkout
+: 1640897560:0;git_current_branch
+: 1640897634:0;code .
+: 1640897908:0;sudo ./docker.sh --force-build
+: 1640899532:0;npm --version
+: 1640901142:0;echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list\
+
+: 1640901156:0;sudo apt update
+: 1640901193:0;sudo ./docker.sh
+: 1640901398:0;sudo apt install notion-app\
+
+: 1640902122:0;gedit ~/.zshrc
+: 1640903219:0;sudo chmod +X DaVinci_Resolve_17.4.3_Linux.run
+: 1640904353:0;cd Downloads
+: 1640904355:0;git@github.com:aunetx/blur-my-shell.git
+: 1640904361:0;gh repo clone aunetx/blur-my-shell
+: 1640904372:0;cd blur-my-shell
+: 1640904384:0;ls
+: 1640904441:0;make install
+: 1640904509:0;sudo apt install gnome-tweak-tool
+: 1640956040:0;sudo apt update -y && sudo apt upgrade -y
+: 1640956083:0;sudo apt install neofetch htop -y
+: 1640956278:0;sudo apt update -y && sudo apt upgrade -y
+: 1640956295:0;sudo apt install neofetch htop -y
+: 1640956498:0;htop
+: 1640956709:0;zinit upgrade
+: 1640956716:0;zinit update
+: 1640956761:0;neofetch
+: 1640957923:0;flatpak install flathub org.flameshot.Flameshot
+: 1640957988:0;cd Documentos/GitHub/tdb
+: 1640957996:0;cd minha-cesta-empresario
+: 1640958165:0;code .
+: 1640958428:0;htop
+: 1640958504:0;sudo ./docker.sh
+: 1640962562:0;git add
+: 1640962567:0;git add .
+: 1640962589:0;git commit -m "feat: finish change password page"
+: 1640962633:0;git config --global user.email "lucasp.sdev@gmail.com" && git config --global user.name "Lucas Souza"
+: 1640962636:0;git commit -m "feat: finish change password page"
+: 1640962645:0;git push
+: 1640962736:0;gh help
+: 1640962746:0;gh pr
+: 1640962757:0;gh pr create --fill
+: 1640963066:0;sudo ./docker.sh
+: 1640970368:0;sudo apt update -y && sudo apt upgrade -y
+: 1640970798:0;sudo apt install ubuntu-restricted-extras-y
+: 1640970803:0;sudo apt install ubuntu-restricted-extras -y
+: 1640971517:0;sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo fwupdmgr get-devices && sudo fwupdmgr get-updates && sudo fwupdmgr update && flatpak update 
+: 1640971556:0;flatpak update 
+: 1640971565:0;sudo fwupdmgr get-updates
+: 1640971571:0;sudo fwupdmgr update
+: 1640971740:0;sudo apt install -y vlc\
+
+: 1640972903:0;sudo apt install timeshift -y
+: 1640974021:0;flameshot
+: 1640979063:0;sudo apt install gamemode
+: 1641046519:0;zinit update
+: 1641047452:0;sudo apt update -y && sudo apt upgrade -y
+: 1641047682:0;cd Documentos/GitHub/tdb
+: 1641047691:0;cd minha-cesta-empresario
+: 1641047696:0;code .
+: 1641092673:0;sudo apt update -y && sudo apt upgrade -y
+: 1641094856:0;sudo apt install nvidia-driver-495
+: 1641102635:0;htop
+: 1641104390:0;sudo snap install notepad-plus-plus\
+
+: 1641124875:0;htop
+: 1641124941:0;sudo apt update -y && sudo apt upgrade -y
+: 1641125181:0;flatpak update 
+: 1641126549:0;flatpak
+: 1641126557:0;flatpak --help
+: 1641126615:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641127514:0;nvidia-smi
+: 1641128156:0;sudo apt install nvidia-driver-470
+: 1641128501:0;flatpak update 
+: 1641128709:0;sudo apt install nvidia-driver-470-server
+: 1641129251:0;nvidia-smi
+: 1641131387:0;neofetch
+: 1641150957:0;sudo apt install openjdk-18-jdk -y && sudo apt install openjdk-18-jre -y
+: 1641151178:0;curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\
+
+: 1641151195:0;echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list\
+
+: 1641151213:0;sudo apt install --no-install-recommends yarn\
+
+: 1641151254:0;yarn --version
+: 1641151264:0;yarn --help
+: 1641151280:0;yarn --version
+: 1641151292:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641151311:0;exit
+: 1641151359:0;yarn upgrade global
+: 1641151368:0;exit
+: 1641162860:0;sudo apt purge ~nnvidia
+: 1641162868:0;sudo apt purge ~nvidia
+: 1641162872:0;sudo apt purge nvidia
+: 1641162888:0;sudo apt clean
+: 1641162908:0;sudo apt update -y && sudo apt install system76-driver-nvidia
+: 1641164342:0;exit
+: 1641236068:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641241180:0;cd Documentos/GitHub/tdb
+: 1641241184:0;cd minha-cesta-empresario
+: 1641241193:0;code .
+: 1641243114:0;cd '/home/lucas/Documentos/GitHub/tdb/minha-cesta-empresario'
+: 1641243114:0;node '/home/lucas/Documentos/GitHub/tdb/minha-cesta-empresario/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/tdb/minha-cesta-empresario/src/app/pages/alert/alert.page.spec.ts' -t 'AlertPage should render data'
+: 1641243133:0;sudo ./docker.sh
+: 1641244944:0;git add .
+: 1641244958:0;git commit -m "feat: add all tests"
+: 1641244961:0;git push
+: 1641245004:0;cd ~
+: 1641245009:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641245325:0;flatpak update 
+: 1641249340:0;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+: 1641249556:0;cd Documentos/GitHub/tdb
+: 1641249561:0;code .
+: 1641249572:0;cd minha-cesta-empresario
+: 1641249574:0;code .
+: 1641253067:0;sudo apt install git libasound2 libcurl4 libgbm1 libgcrypt20 libgtk-3-0 libnotify4 libnss3 libglib2.0-bin xdg-utils libx11-xcb1 libxcb-dri3-0 libxss1 libxtst6 libxkbfile1
+: 1641290911:0;cd Documentos/GitHub/tdb
+: 1641290915:0;cd minha-cesta-empresario
+: 1641290920:0;code .
+: 1641290967:0;sudo ./docker.sh
+: 1641292712:0;git add .
+: 1641292729:0;git commit -m "feat: login page responsiviness"
+: 1641292731:0;git push
+: 1641293327:0;git add .
+: 1641293347:0;git commit -m "feat: resgate page responsiviness"
+: 1641293351:0;git push
+: 1641294130:0;git add .
+: 1641294150:0;git commit -m "feat: change password page responsiviness"
+: 1641294525:0;cd ~
+: 1641294529:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641341417:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1641341424:0;code .
+: 1641341502:0;git pull
+: 1641341697:0;sudo ./docker.sh
+: 1641343582:0;git add .
+: 1641343602:0;git commit -m "chore: init structure"
+: 1641343608:0;git push
+: 1641343888:0;cd ~
+: 1641343892:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641374649:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1641374655:0;code .
+: 1641377186:0;sudo ./docker.sh
+: 1641377697:0;git add .
+: 1641377724:0;git commit -m "feat: finish change password logic"
+: 1641377728:0;git push
+: 1641378408:0;git add .
+: 1641378422:0;git commit -m "feat: add all tests"
+: 1641378425:0;git push
+: 1641378573:0;cd ~
+: 1641378579:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641396212:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1641396214:0;cd ..
+: 1641396224:0;cd minha-cesta-app
+: 1641396239:0;sudo ./docker.sh
+: 1641413249:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1641413260:0;sudo ./docker.sh
+: 1641413282:0;cd ..
+: 1641413289:0;cd minha-cesta-app
+: 1641413293:0;sudo ./docker.sh
+: 1641413980:0;code .
+: 1641414190:0;git pull
+: 1641414404:0;sudo ./docker.sh
+: 1641414491:0;git add .
+: 1641414513:0;git commit -m "fix: resolve scss errors"
+: 1641414519:0;git push
+: 1641414531:0;git push --set-upstream origin feat/fix-login-input-error
+: 1641415191:0;exit
+: 1641415607:0;flatpak update 
+: 1641415615:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641416184:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1641416191:0;sudo ./docker.sh
+: 1641417072:0;cd Documentos/GitHub/tdb/minha-cesta-empresario/
+: 1641417083:0;code .
+: 1641417882:0;sudo ./docker.sh
+: 1641418554:0;cd ..
+: 1641418576:0;git pull
+: 1641418605:0;gh repo clone tdb-devs/minha-cesta-django
+: 1641418621:0;cd minha-cesta-django
+: 1641418626:0;code .
+: 1641418779:0;docker-compose build
+: 1641418811:0;./docker-shell.sh
+: 1641418841:0;docker -v
+: 1641418939:0;sudo chmod +x /usr/local/bin/docker-compose
+: 1641418966:0;docker-compose build
+: 1641418982:0;sudo docker-compose build
+: 1641422175:0;sudo docker-compose up
+: 1641423116:0;docker images â€ƒ³a
+: 1641423121:0;sudo docker images â€ƒ³a
+: 1641423150:0;docker --help
+: 1641423170:0;docker image -a
+: 1641423183:0;docker images --help
+: 1641423190:0;docker images -a
+: 1641423196:0;sudo docker images â€ƒ³a
+: 1641423223:0;sudo docker image rmi 1
+: 1641425925:0;sudo apt install conky jq -y
+: 1641426131:0;apt build conky-lua
+: 1641426183:0;sudo apt install conky-lua
+: 1641426224:0;sudo apt install conky-all
+: 1641426459:0;./start_conky.sh
+: 1641426588:0;sudo apt remove conky conky-all -y
+: 1641427100:0;sudo apt clean
+: 1641427108:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641427136:0;sudo apt autoremove
+: 1641427150:0;exit
+: 1641473034:0;cd Downloads
+: 1641473037:0;gh repo clone vinceliuice/Fluent-gtk-theme
+: 1641473090:0;ls
+: 1641473097:0;cd Fluent-gtk-theme
+: 1641473202:0;sudo ./install.sh -s compact -i popos --tweaks round noborder square
+: 1641473212:0;cd ..
+: 1641480536:0;cd ~
+: 1641480547:0;sudo apt update -y && sudo apt full-upgrade -y
+: 1641480948:0;flatpak update 
+: 1641504837:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641540696:0;cd Documentos/GitHub/Pessoal/cd ..
+: 1641540724:0;cd Documentos/GitHub/pessoal
+: 1641540734:0;mkdir pokemon-vue3
+: 1641540738:0;cd pokemon-vue3
+: 1641540740:0;code .
+: 1641540837:0;yarn global add @vue/cli
+: 1641540857:0;sudo yarn global add @vue/cli
+: 1641540891:0;yarn version
+: 1641540895:0;yarn
+: 1641540904:0;yarn --help
+: 1641540923:0;yarn --version
+: 1641540937:0;sudo remove yarn
+: 1641540956:0;sudo apt remove yarn
+: 1641541014:0;corepack enable
+: 1641541038:0;yarn set version stable
+: 1641541088:0;yarn upgrade
+: 1641541123:0;sudo apt remove cmdtest
+: 1641541141:0;sudo apt remove yarn
+: 1641541186:0;sudo npm install -g yarn
+: 1641541198:0;npm --version
+: 1641541211:0;npm install-g yarn
+: 1641541219:0;npm install -g yarn
+: 1641541230:0;sudo npm install -g yarn
+: 1641541288:0;node --version
+: 1641541300:0;sudo apt install npm
+: 1641542543:0;npm --version
+: 1641542554:0;npm install -g yarn
+: 1641542560:0;sudo npm install -g yarn
+: 1641542574:0;yarn --version
+: 1641542592:0;yarn global add @vue/cli\
+
+: 1641542739:0;yarn global upgrade --latest @vue/cli\
+
+: 1641542797:0;vue create pokemon-app
+: 1641542802:0;source
+: 1641542811:0;vue create pokemon-app
+: 1641542911:0;vue --version
+: 1641542977:0;yarn global add @vue/cli@latest
+: 1641542997:0;yarn global remove @vue/cli
+: 1641543003:0;yarn global add @vue/cli@latest
+: 1641543016:0;yarn global remove @vue/cli
+: 1641543032:0;sudo yarn global add @vue/cli@latest
+: 1641543370:0;vue create pokemon-vue3
+: 1641544069:0;code .
+: 1641544111:0;git remote add origin https://github.com/deverebor/pokemon-vue3.git
+: 1641544121:0;git branch -M main
+: 1641544127:0;git push -u origin main
+: 1641544417:0;yarn
+: 1641544421:0;yarn serve
+: 1641549901:0;git add .
+: 1641549984:0;git commit -m "chore: finish home"
+: 1641549987:0;git push
+: 1641550046:0;git pull
+: 1641550057:0;git branch --set-upstream-to=origin/<branch> chore/about-page
+: 1641550074:0;git push
+: 1641550079:0;git push --set-upstream origin chore/about-page
+: 1641550086:0;git pull
+: 1641550093:0;git pull origin main
+: 1641550105:0;exit
+: 1641574201:0;sudo ubuntu-drivers autoinstall
+: 1641574218:0;sudo apt autoremove
+: 1641574271:0;sudo prime-select nvidia\
+
+: 1641575390:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641576702:0;man xorg.conf.d
+: 1641576733:0;lspci|egrep -i "vga|3d" 
+: 1641577064:0;cd Documentos/GitHub/pessoal
+: 1641577067:0;cd pokemon-vue3
+: 1641577071:0;code .
+: 1641577752:0;git pull
+: 1641577769:0;git pull origin main
+: 1641577782:0;yarn serve
+: 1641579265:0;sudo apt-get install icc-profiles\
+
+: 1641579429:0;sudo apt update --fix-missing\
+
+: 1641579544:0;sudo apt remove icc-profiles\
+
+: 1641582391:0;sudo apt install argyllcms -y
+: 1641582812:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641582833:0;sudo apt install icc-profiles\
+
+: 1641589377:0;git add .
+: 1641589395:0;git commit -m "feat: finish about page"
+: 1641589398:0;git push
+: 1641590580:0;cd '/home/lucas/Documentos/GitHub/pessoal/pokemon-vue3'
+: 1641590581:0;node '/home/lucas/Documentos/GitHub/pessoal/pokemon-vue3/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/pokemon-vue3/src/views/Home/__tests__/Home.spec.ts' -t 'Should render Home'
+: 1641590630:0;cd '/home/lucas/Documentos/GitHub/pessoal/pokemon-vue3'
+: 1641590630:0;node '/home/lucas/Documentos/GitHub/pessoal/pokemon-vue3/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/pokemon-vue3/src/views/Home/__tests__/Home.spec.ts' -t 'Should render Home'
+: 1641590701:0;git add .
+: 1641590721:0;git commit -m "test: first tests"
+: 1641590723:0;git pull
+: 1641590745:0;git pull origin main
+: 1641590755:0;git push origin main
+: 1641590769:0;git push
+: 1641590842:0;git pull
+: 1641593251:0;cd Downloads
+: 1641593264:0;sudo chmod +x NVIDIA-Linux-x86_64-495.46.run
+: 1641593277:0;sudo ./NVIDIA-Linux-x86_64-495.46.run
+: 1641594011:0;sudo apt install nvidia-driver-495 -y
+: 1641594701:0;reboot
+: 1641595331:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641596699:0;reboot
+: 1641597552:0;cd Documentos/GitHub/pessoal
+: 1641597556:0;cd pokemon-vue3
+: 1641597559:0;code .
+: 1641597838:0;sudo ./deploy.sh
+: 1641597863:0;sudo chmod +x deploy.sh
+: 1641597866:0;sudo ./deploy.sh
+: 1641597929:0;git config --global user.email "lucasp.sdev@gmail.com" && git config --global user.name "Lucas Souza"
+: 1641597931:0;sudo ./deploy.sh
+: 1641597961:0;./deploy.sh
+: 1641597990:0;sudo git config --global user.email "lucasp.sdev@gmail.com" && sudo git config --global user.name "Lucas Souza"
+: 1641597993:0;./deploy.sh
+: 1641597997:0;sudo ./deploy.sh
+: 1641598070:0;git add .
+: 1641598086:0;git commit -m "feat: deploy rules"
+: 1641598089:0;git push
+: 1641598093:0;git push --set-upstream origin chore/deploy-configure
+: 1641598105:0;sudo ./deploy.sh
+: 1641598253:0;git add .
+: 1641598268:0;git commit -m "fix: deploy path"
+: 1641598272:0;git push
+: 1641598312:0;git pull origin chore/deploy-configure
+: 1641598321:0;sudo ./deploy.sh
+: 1641598340:0;git add .
+: 1641598363:0;git commit -m "chore: init"
+: 1641598443:0;sudo ./deploy.sh
+: 1641598459:0;git add .
+: 1641598482:0;git commit -m "deploy"
+: 1641598504:0;git push -f git@github.com:deverebor/pokemon-vue3.git main:gh-pages
+: 1641598557:0;cd dist
+: 1641598562:0;git init
+: 1641598570:0;sudo git init
+: 1641598580:0;git checkout
+: 1641598587:0;git man
+: 1641598591:0;git --help
+: 1641598606:0;git status
+: 1641598790:0;cd ..
+: 1641598801:0;sudo ./deploy.sh
+: 1641598827:0;git config --global init.defaultBranch <main>
+: 1641598833:0;git config --global init.defaultBranch main
+: 1641598838:0;sudo ./deploy.sh
+: 1641598888:0;cd dist
+: 1641598892:0;git commit -m "deploy"
+: 1641598913:0;cd ..
+: 1641598917:0;sudo rm -rf dist
+: 1641598934:0;sudo yarn build
+: 1641598942:0;cd dist
+: 1641598949:0;git init
+: 1641598983:0;su
+: 1641598991:0;sudo su
+: 1641599430:0;cd Documentos/GitHub/tdb/minha-cesta-empresario/
+: 1641599435:0;code .
+: 1641599725:0;git add .
+: 1641599743:0;git commit -m "chore: github pr model"
+: 1641599746:0;git push
+: 1641644923:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641645595:0;cd Documentos/GitHub/pessoal/pokemon-vue3
+: 1641645599:0;code .
+: 1641645857:0;chmod +x deploy.sh
+: 1641646005:0;yarn deploy
+: 1641646022:0;sudo yarn deploy
+: 1641646067:0;cd dist
+: 1641646071:0;sudo su
+: 1641646533:0;cd ..
+: 1641646538:0;git add .
+: 1641646562:0;git commit -m "new deploy"
+: 1641646566:0;git push
+: 1641646572:0;git push --set-upstream origin gh-pages\
+
+: 1641646612:0;git add -A
+: 1641646617:0;git commit -m "New deploy"
+: 1641646623:0;git push -f git@github.com:deverebor/pokemon-vue3.git main:gh-pages
+: 1641650183:0;cd Documentos/GitHub/pessoal/
+: 1641650210:0;yarn create nuxt-app movie-finder
+: 1641650593:0;cd movie-finder
+: 1641650642:0;code .
+: 1641650658:0;git add .
+: 1641650674:0;git commit -m "chore: startup folders"
+: 1641650683:0;git remote add origin git@github.com:deverebor/movie-finder.git
+: 1641650689:0;git branch -M main
+: 1641650694:0;git push -u origin main
+: 1641650923:0;git pull
+: 1641651055:0;yarn dev
+: 1641651134:0;git pull
+: 1641651143:0;yarn dev
+: 1641651349:0;code .
+: 1641651384:0;yarn dev
+: 1641651739:0;yarn add --dev sass sass-loader@10
+: 1641652521:0;yarn dev
+: 1641653706:0;yarn serve
+: 1641653709:0;yarn start
+: 1641653715:0;yarn dev
+: 1641653742:0;git add .
+: 1641653815:0;git commit -m "chore: add scss to default style"
+: 1641653817:0;git push
+: 1641653822:0;git push --set-upstream origin chore/add-scss
+: 1641653862:0;git pull
+: 1641654019:0;sudo yarn
+: 1641654099:0;sudo yarn dev
+: 1641654425:0;git add .
+: 1641654451:0;git commit -m "chore: solve sccs compile error"
+: 1641654455:0;git push
+: 1641654460:0;git push --set-upstream origin fix/sass-module-error
+: 1641654471:0;gh pr create --fill
+: 1641654479:0;gh pr --help
+: 1641654489:0;gh pr view --web
+: 1641654729:0;git add .
+: 1641654768:0;git commit -m "fix: tries to fix eslint deploy error"
+: 1641654771:0;git push
+: 1641655004:0;sudo yarn
+: 1641655029:0;git add .
+: 1641655044:0;git commit -m "chore: remove lint"
+: 1641655048:0;git push
+: 1641655123:0;git add .
+: 1641655133:0;git commit -m "fix: remove old tests"
+: 1641655136:0;git push
+: 1641655217:0;git add .
+: 1641655240:0;git commit -m "chore: tries to solve check errors"
+: 1641655243:0;git push
+: 1641659938:0;vue --version
+: 1641659948:0;vue upgrade
+: 1641660045:0;cd Documentos/GitHub/pessoal/
+: 1641660081:0;mkdir geocoding-map
+: 1641660084:0;cd geocoding-map
+: 1641660160:0;cd ..
+: 1641660165:0;rm -rf geocoding-map
+: 1641660388:0;mkdir geocoding-map
+: 1641660390:0;cd ge
+: 1641660397:0;cd geocoding-map
+: 1641660400:0;code .
+: 1641660427:0;yarn init -y
+: 1641660461:0;yarn add express dotenv cors axios
+: 1641660504:0;yarn add -D nodemon
+: 1641660917:0;yarn dev
+: 1641662567:0;sudo apt-get install system76-driver-nvidia
+: 1641662623:0;yarn dev
+: 1641663811:0;yarn add -D jest
+: 1641663854:0;touch jest.config.json
+: 1641663919:0;touch index.spec.js
+: 1641663946:0;yarn test
+: 1641664489:0;yarn dev
+: 1641664792:0;yarn test
+: 1641664841:0;sudo apt install nvidia-driver-470 -y
+: 1641665230:0;yarn test
+: 1641665237:0;sudo yarn test
+: 1641665834:0;git add .
+: 1641666362:0;git init
+: 1641666369:0;git add .
+: 1641666445:0;cd ..
+: 1641666451:0;git init
+: 1641666456:0;git add .
+: 1641666482:0;git commit -m "chore: create aplication api"
+: 1641666496:0;git remote add origin git@github.com:deverebor/geocoding-map.git
+: 1641666505:0;git branch -M main
+: 1641666511:0;git push -u origin main
+: 1641673734:0;cd Documentos/GitHub/pessoal/geocoding-map
+: 1641673736:0;code .
+: 1641673866:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641673866:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/index.spec.js' -t 'index Should index\.js exist'
+: 1641673901:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641673901:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/index.spec.js' -t 'index Should index\.js exist'
+: 1641673992:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641673992:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/index.spec.js' -t 'index Should server running at port 3000'
+: 1641674096:0;cd server
+: 1641674104:0;yarn serve
+: 1641674107:0;yarn dev
+: 1641674308:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641674308:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/index.spec.js' -t 'index Should make one search on api'
+: 1641674335:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641674335:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/index.spec.js' -t 'index Should make one search on api'
+: 1641674378:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641674378:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/index.spec.js' -t 'index Should make one search on api'
+: 1641674455:0;cd server
+: 1641674472:0;yarn add typescript
+: 1641674536:0;yarn add -D ts-node @types/node @types/express
+: 1641674564:0;yarn tsc init
+: 1641674716:0;yarn add -D @types/jest
+: 1641674783:0;sudo yarn
+: 1641674828:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641674828:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/routes/search/__test__/search.spec.ts' -t 'My Test Suite My Test Case'
+: 1641674847:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641674847:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/routes/search/__test__/search.spec.ts' -t 'My Test Suite'
+: 1641674880:0;yarn tsc --init
+: 1641674991:0;yarn tsc --project /
+: 1641675030:0;yarn tsc --project ./server
+: 1641675042:0;cd ..
+: 1641675055:0;yarn tsc --project ./server
+: 1641675064:0;cd server
+: 1641675070:0;yarn tsc --project ./
+: 1641675179:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641675179:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/app.spec.ts' -t 'index Should make one search on api'
+: 1641675194:0;yarn dev
+: 1641675313:0;cd server
+: 1641675320:0;sudo yarn dev
+: 1641675370:0;yarn dev
+: 1641675623:0;yarn start
+: 1641675784:0;yarn dev
+: 1641675815:0;cd '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server'
+: 1641675816:0;node '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/node_modules/.bin/jest' '/home/lucas/Documentos/GitHub/pessoal/geocoding-map/server/app.spec.ts' -t 'index Should make one search on api'
+: 1641675844:0;yarn dev
+: 1641675849:0;cd server
+: 1641675855:0;yarn dev
+: 1641675858:0;cd server
+: 1641675929:0;git add .
+: 1641675952:0;git commit -m "chore: change project to typescript"
+: 1641675957:0;git push
+: 1641676027:0;cd server
+: 1641676035:0;yarn der
+: 1641676038:0;yarn dev
+: 1641676119:0;vue create client
+: 1641676999:0;tree
+: 1641677050:0;chmod +x tree.sh
+: 1641677054:0;./tree.sh
+: 1641677128:0;tree -tf --noreport -I "readme.md" -P "*.md" --charset ascii
+: 1641677160:0;sudo apt install tree
+: 1641677246:0;./tree.sh
+: 1641677303:0;tree
+: 1641677486:0;git add .
+: 1641677507:0;git commit -m "chore: add vue3 as front-end"
+: 1641677511:0;git push
+: 1641677862:0;git pull
+: 1641678383:0;git add .
+: 1641678396:0;git commit -m "chore: add github actions"
+: 1641678399:0;git push
+: 1641678404:0;git push --set-upstream origin chore/setup-githubactions
+: 1641678535:0;git pull
+: 1641678645:0;cd client
+: 1641678674:0;yarn serve
+: 1641679881:0;cd client
+: 1641679899:0;code .
+: 1641679906:0;cd ..
+: 1641679944:0;yarn add -D tailwindcss postcss autoprefixer
+: 1641679990:0;yarn tailwindcss init -p
+: 1641680036:0;yarn add axios leaflet
+: 1641680318:0;yarn serve
+: 1641680409:0;yarn add postcss-loader
+: 1641680430:0;yarn serve
+: 1641680702:0;sudo yarn
+: 1641681179:0;yarn add -D @types/leaflet
+: 1641681577:0;yarn serve
+: 1641681596:0;git add .
+: 1641681632:0;git commit -m "chore: finish front-end"
+: 1641681639:0;git push
+: 1641681835:0;cd Documentos/GitHub/pessoal/geocoding-map
+: 1641681838:0;code .
+: 1641681886:0;git pull
+: 1641681940:0;git add .
+: 1641681955:0;git commit -m "fix: remove old workflow
+: 1641681959:0;git commit -m "fix: remove old workflow"
+: 1641681963:0;git push
+: 1641683716:0;xrandr
+: 1641683875:0;sudo nvidia-settings
+: 1641683964:0;pkill -9 picom
+: 1641683972:0;nvidia-settings --assign CurrentMetaMode="DP-4: 3840x2160_60 +3840+0 {ForceCompositionPipeline=Off, AllowGSYNCCompatible=On}, HDMI-0: nvidia-auto-select +0+0 {ForceCompositionPipeline=Off}"
+: 1641683986:0;picom -f --config ~/.config/picom/picom.conf --experimental-backends &
+: 1641685193:0;xrandr --help
+: 1641685235:0;xrandr -r 120
+: 1641685345:0;sudo nvidia-settings
+: 1641685419:0;cd /etx/X11/xorg.conf
+: 1641685435:0;cd ~/etx/X11/xorg.conf
+: 1641685453:0;sudo nautilus
+: 1641685559:0;X -configure
+: 1641685568:0;sudo X -configure
+: 1641731202:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641731865:0;cp ~/.config/monitors.xml ~gdm/.config/
+: 1641731871:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1641731907:0;sudo nautilus
+: 1641732121:0;cd Documentos/GitHub/pessoal/movie-finder
+: 1641732123:0;code .
+: 1641734493:0;yarn den
+: 1641734496:0;yarn dev
+: 1641734522:0;sudo yarn dev
+: 1641734570:0;git pull
+: 1641734653:0;sudo yarn dev
+: 1641735737:0;git add .
+: 1641735757:0;git commit -m "feat: movie route params"
+: 1641735760:0;git push
+: 1641735766:0;git push --set-upstream origin chore/route-params
+: 1641735905:0;git pull
+: 1641735935:0;sudo yarn dev
+: 1641745449:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1641745478:0;cd Documentos/GitHub/pessoal/movie-finder
+: 1641745480:0;code .
+: 1641745523:0;sudo yarn dev
+: 1641747376:0;git add .
+: 1641747391:0;git commit -m "feat: finish hero component"
+: 1641747394:0;git push
+: 1641747405:0;gh pr create --fill
+: 1641747559:0;git pull
+: 1641747689:0;sudo yarn dev
+: 1641764221:0;git add .
+: 1641764248:0;git commit -m "feat: finish create home page"
+: 1641764250:0;git push
+: 1641764258:0;gh pr create --fill
+: 1641764374:0;git pull
+: 1641764381:0;sudo yarn dev
+: 1641764400:0;cd Documentos/GitHub/pessoal/
+: 1641764433:0;mkdir the-lonely-mountain
+: 1641764436:0;cd the
+: 1641764442:0;cd the-lonely-mountain
+: 1641764446:0;code .
+: 1641764507:0;git init
+: 1641765474:0;git add .
+: 1641765499:0;git commit -m "chore: start repo"
+: 1641765510:0;git remote add origin git@github.com:deverebor/the-lonely-mountain.git
+: 1641765514:0;git branch -M main
+: 1641765519:0;git push -u origin main
+: 1641766712:0;sudo yarn dev
+: 1641767665:0;git add .
+: 1641767683:0;git commit -m "feat: finish search feature"
+: 1641767686:0;git push
+: 1641767935:0;git pull
+: 1641809955:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1641809990:0;sudo nautilus
+: 1641811739:0;cd Documentos/GitHub/pessoal/
+: 1641811741:0;git@github.com:deverebor/hub-site-front.git
+: 1641811746:0;git clone git@github.com:deverebor/hub-site-front.git
+: 1641811757:0;cd hub-site-front
+: 1641811759:0;code .
+: 1641811777:0;git pull
+: 1641811964:0;git add .
+: 1641811981:0;git commit -m "feat: add github actions and dependabot"
+: 1641811983:0;git push
+: 1641812459:0;git add .
+: 1641812474:0;git commit -m "docs: add pr template"
+: 1641812476:0;git push
+: 1641815143:0;git add .
+: 1641815150:0;git commit -m 
+: 1641815219:0;git commit -m "fix: change yarn to npm"
+: 1641815224:0;git push
+: 1641833963:0;flatpak install flathub com.stremio.Stremio
+: 1641850804:0;cd Documentos/GitHub/tdb
+: 1641850806:0;ls -la
+: 1641850818:0;cd minha-cesta-django
+: 1641850822:0;code .
+: 1641851138:0;cd ..
+: 1641851143:0;cd minha-cesta-app
+: 1641851145:0;code .
+: 1641851355:0;cd ..
+: 1641851359:0;cd minha-cesta-empresario
+: 1641851361:0;code .
+: 1641852336:0;git add .
+: 1641852353:0;git commit -m "feat: create new employee endpoint"
+: 1641852359:0;git push
+: 1641852368:0;gh pr create --fill
+: 1641852412:0;git add .
+: 1641852593:0;git commit -m "fix: employee endpoint"
+: 1641852596:0;git push[
+: 1641852599:0;git push
+: 1641852704:0;git pull
+: 1641852715:0;cd ..
+: 1641852718:0;cd minha-cesta-empresario
+: 1641852719:0;code .
+: 1641852852:0;sudo ./docker.sh --force-build
+: 1641854617:0;rm -rf node_modules
+: 1641854625:0;sudo rm -rf node_modules
+: 1641856016:0;sudo ./docker.sh --force-build
+: 1641856794:0;cd ..
+: 1641856798:0;cd minha-cesta-empresario
+: 1641856806:0;sudo ./docker.sh
+: 1641856898:0;git commit -m "chore: add variables in global scss"
+: 1641856900:0;git push
+: 1641856908:0;git add .
+: 1641856921:0;git commit -m "chore: add rupture sass"
+: 1641856923:0;git push
+: 1641856935:0;sudo ./docker.sh
+: 1641857362:0;code .
+: 1641857946:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641858800:0;cd Diocumentos/GitHub/tdb
+: 1641858806:0;cd Documentos/GitHub/tdb
+: 1641858810:0;cd minha-cesta-empresario
+: 1641858812:0;code .
+: 1641859309:0;nvidia-smi
+: 1641901449:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641935799:0;cd Documentos/GitHub/tdb
+: 1641935803:0;cd minha-cesta-app
+: 1641935807:0;code .
+: 1641935830:0;sudo ./docker.sh
+: 1641935995:0;sudo ./docker.sh --force-build
+: 1641938612:0;git pull
+: 1641938818:0;git pull origin update_ionic_assinante
+: 1641938949:0;sudo ./docker.sh
+: 1641938962:0;chmod +x docker.sh
+: 1641938965:0;sudo ./docker.sh
+: 1641938977:0;sudo ./docker.sh --force-build
+: 1641939354:0;docker images -a
+: 1641939361:0;sudo docker image -a
+: 1641939398:0;sudo docker images â€ƒ³a
+: 1641939408:0;sudo docker images 
+: 1641939533:0;sudo docker rmi cc055c675de0 8cc826afc9c4 b8ee5ba27508 8f53ad9108cb 
+: 1641939564:0;sudo docker images 
+: 1641939617:0;sudo docker rmi 8cc826afc9c4 e88fab33153a f6e71ff7ed6b 373f8d4d4c60 3900abf41552 cf2aa6fa1f65 8cc826afc9c4
+: 1641939634:0;sudo docker rmi 8cc826afc9c4 --force
+: 1641939640:0;sudo docker images 
+: 1641939660:0;sudo docker rmi 8cc826afc9c4 e88fab33153a f6e71ff7ed6b 373f8d4d4c60 3900abf41552 cf2aa6fa1f65 --force
+: 1641939672:0;sudo docker images 
+: 1641939688:0;sudo docker rmi e88fab33153a --force
+: 1641939694:0;sudo ./docker.sh --force-build
+: 1641941425:0;./docker.sh
+: 1641942412:0;sudo apt install gramemode
+: 1641942420:0;sudo apt install gamemode
+: 1641983762:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641986860:0;cd Documentos/GitHub
+: 1641986862:0;ls -la
+: 1641986866:0;cd pessoal
+: 1641986868:0;ls -la
+: 1641986876:0;cd hub-site-front
+: 1641986884:0;code .
+: 1641987671:0;git add .
+: 1641987712:0;git commit -m "feat: change dependabot reviewrs"
+: 1641987717:0;git push
+: 1641987995:0;git add .
+: 1641988007:0;git commit -m "feat: add cypress job"
+: 1641988010:0;git push
+: 1641989504:0;sudo docker images
+: 1641989543:0;sudo docker rmi b27307b07324 1fc9ec7e2002 e88fab33153a 0b408ebe9e2f -force
+: 1641989552:0;sudo docker rmi b27307b07324 1fc9ec7e2002 e88fab33153a 0b408ebe9e2f --force
+: 1641989794:0;sudo docker images
+: 1641989813:0;sudo docker rmi e88fab33153a --force
+: 1641989845:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1641998848:0;flatpak install com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+: 1641998860:0;flatpak update 
+: 1641999098:0;flatpak install com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+: 1642025941:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1642026034:0;code .
+: 1642026215:0;sudo ./docker.sh 
+: 1642029396:0;git add .
+: 1642029423:0;git commit -m "feat: toggle password"
+: 1642029431:0;git push
+: 1642029462:0;gh pr create
+: 1642030486:0;git add .
+: 1642030502:0;git commit -m "test: add login verify test"
+: 1642030504:0;git push
+: 1642030557:0;git pull
+: 1642033505:0;git add .
+: 1642033522:0;git commit -m "feat: new resgate page layout"
+: 1642033527:0;git push
+: 1642033538:0;gh pr create
+: 1642085118:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1642085177:0;code .
+: 1642085213:0;git pull
+: 1642085395:0;sudo ./docker.sh
+: 1642086950:0;git add .
+: 1642086970:0;git commit -m "chore: resolve styles duplicated"
+: 1642086975:0;git push
+: 1642086979:0;git push --set-upstream origin chore/ajust-some-scss-problems
+: 1642086987:0;gh pr create
+: 1642087269:0;git add .
+: 1642087285:0;git commit -m "feat: change login fontfamily"
+: 1642087287:0;git push
+: 1642087899:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1642087947:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642087956:0;code .
+: 1642088096:0;git pull
+: 1642088121:0;git pull origin update_ionic_assinante
+: 1642088143:0;sudo ./docker.sh
+: 1642089359:0;git add .
+: 1642089376:0;git commit -m "chore: fix all styles problems"
+: 1642089378:0;git push
+: 1642089688:0;git add .
+: 1642089705:0;git commit -m "fix: remove double var declaration"
+: 1642089708:0;git push
+: 1642089802:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1642089806:0;code .
+: 1642090321:0;git add .
+: 1642090332:0;git commit -m "chore: add github folder"
+: 1642090335:0;git push
+: 1642090406:0;git add .
+: 1642090409:0;git commit -m "chore: add github folder"
+: 1642090412:0;git push
+: 1642091752:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642091753:0;code .
+: 1642091774:0;git pull
+: 1642091979:0;sudo ./docker.sh
+: 1642092198:0;git add .
+: 1642092226:0;git commit -m "fix: remove var in variables scss"
+: 1642092228:0;git push
+: 1642109206:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642109209:0;code .
+: 1642151690:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1642152818:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642152824:0;code .
+: 1642152833:0;git pull
+: 1642153006:0;sudo ./docker.sh
+: 1642170912:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1642191462:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642191467:0;code .
+: 1642191520:0;sudo ./docker.sh
+: 1642191649:0;git pull
+: 1642192775:0;sudo ./docker.sh --force-build
+: 1642193001:0;sudo rm -rf node_modules
+: 1642193026:0;sudo ./docker.sh 
+: 1642193175:0;sudo rm -rf node_modules
+: 1642193181:0;sudo rm -rf www
+: 1642193192:0;sudo ./docker.sh --force-build
+: 1642193785:0;sudo rm -rf www
+: 1642193797:0;sudo rm -rf .angular
+: 1642193828:0;git pull
+: 1642193857:0;sudo ./docker.sh --force-build
+: 1642194037:0;sudo rm -rf node_modules
+: 1642194056:0;sudo ./docker.sh --force-build
+: 1642194095:0;sudo docker images
+: 1642194122:0;sudo docker rmi 85ade3636e04 03d4af1a0930 --force
+: 1642194265:0;sudo ./docker.sh --force-build
+: 1642194395:0;sudo docker images
+: 1642194417:0;sudo docker rmi d65887824724 --force
+: 1642194443:0;sudo ./docker.sh --force-build
+: 1642195237:0;sudo rm -rf node_modules
+: 1642195243:0;docker images 
+: 1642195247:0;sudo docker images
+: 1642195269:0;sudo docker rmi 5599167bc31f --force
+: 1642195369:0;sudo ./docker.sh --force-build
+: 1642196602:0;htop
+: 1642198763:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update
+: 1642241222:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1642241239:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642241747:0;reboot
+: 1642242795:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642242800:0;code .
+: 1642243162:0;sudo ./docker.sh
+: 1642256713:0;git add .
+: 1642256728:0;git commit -m "chore: finish promotion page"
+: 1642256732:0;git push
+: 1642256739:0;gh pr create
+: 1642259643:0;git add .
+: 1642259657:0;git commit -m "test: add some tests"
+: 1642259714:0;git push
+: 1642281596:15;sudo ./docker.sh
+: 1642281691:0;sudo docker images
+: 1642281701:0;sudo ./docker.sh
+: 1642281707:0;sudo ./docker.sh --force-build
+: 1642282059:0;sudo docker images
+: 1642282080:0;sudo docker rmi fe7180b25864 --force
+: 1642282177:0;docker
+: 1642286682:0;cd Downloads
+: 1642286683:0;gh repo clone vinceliuice/Tela-circle-icon-theme
+: 1642286720:0;cd Tela-circle-icon-theme
+: 1642286769:0;sudo ./install.sh -a
+: 1642327845:0;cd Downloads
+: 1642327847:0;sudo -s
+: 1642346544:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642346550:0;code .
+: 1642346868:0;sudo ./docker.sh
+: 1642346937:0;git pull
+: 1642348023:0;git add . 
+: 1642348060:0;git commit -m "style: add responsivess breakingpoints"
+: 1642348064:0;git push
+: 1642348070:0;git add .
+: 1642348086:0;git commit -m "feat: solve loading spinner error"
+: 1642348125:0;git push
+: 1642422229:0;cd Documentos/GitHub/pessoal
+: 1642422275:0;ls -la
+: 1642422289:0;cd movie-finder
+: 1642422293:0;code .
+: 1642422371:0;git add .
+: 1642422388:0;git commit -m "feat: loading component"
+: 1642422392:0;git push
+: 1642498714:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642498721:0;code .
+: 1642499086:0;git pull
+: 1642499157:0;cd ~
+: 1642499160:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642516808:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642516810:0;code .
+: 1642516929:0;git pull
+: 1642517020:0;sudo ./docker.sh
+: 1642517116:0;git pull origin update_ionic_assinante
+: 1642517136:0;git commit 
+: 1642517139:0;git push
+: 1642520837:0;git commit -m "fix(app): update style variables"
+: 1642520862:0;git commit -m "fix(about): update style variables"
+: 1642520886:0;git commit -m "fix(change-password): update style variables"
+: 1642520905:0;git commit -m "fix(privacity): update style variables"
+: 1642520907:0;git push
+: 1642521564:0;git add .
+: 1642521579:0;git commit -m "fix(profile): update style variables"
+: 1642521583:0;git push
+: 1642521872:0;git add .
+: 1642521882:0;git commit -m "fix(terms): update style variables"
+: 1642521885:0;git push
+: 1642522369:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642534957:0;whoami
+: 1642534961:0;ip
+: 1642534989:0;ifconfig
+: 1642535161:0;curl ifconfig.me
+: 1642550539:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642550546:0;code .
+: 1642550676:0;sudo ./docker.sh
+: 1642552281:0;git add .
+: 1642552297:0;git commit -m "feat: add responsivinnes"
+: 1642552299:0;git push
+: 1642588492:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642611121:0;sudo apt autoremove
+: 1642682545:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1642686105:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642694456:0;sudo apt autoremove
+: 1642708213:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642708225:0;code .
+: 1642708323:0;git pull
+: 1642708655:0;sudo ./docker.sh
+: 1642709831:0;git add .
+: 1642709847:0;git commit -m "fix(login): update style variables"
+: 1642709849:0;git push
+: 1642710254:0;git pull
+: 1642710268:0;sudo ./docker.sh
+: 1642713124:0;git add .
+: 1642713159:0;git commit -m "chore: adjust props names"
+: 1642713161:0;git push
+: 1642713360:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642713361:0;code ..
+: 1642713389:0;code .
+: 1642713713:0;git pull origin update_ionic_assinante
+: 1642713901:0;cd Documentos/GitHub/tdb/minha-cesta-empresario
+: 1642713903:0;		code .
+: 1642715157:0;sudo ./docker.sh
+: 1642715809:0;code .
+: 1642717178:0;cd ~
+: 1642717185:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642770211:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642770224:0;code .
+: 1642770366:0;sudo ./docker.sh
+: 1642770380:0;cd ~
+: 1642770386:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642770608:0;git commit -m "fix: some aplication issues"
+: 1642770611:0;git push
+: 1642770618:0;git pull
+: 1642772288:0;git add . 
+: 1642772315:0;git commit -m "feat: grid template to promotion content"
+: 1642772317:0;git push
+: 1642772323:0;gh pr create
+: 1642854197:0;cd Downloads
+: 1642854211:0;gh repo clone vinceliuice/Graphite-gtk-theme
+: 1642854223:0;cd Graphite-gtk-theme
+: 1642854288:0;sudo ./install.sh -s compact --tweaks rimless
+: 1642854329:0;ls -la
+: 1642854376:0;cd ..
+: 1642854379:0;rm -rf Graphite-gtk-theme
+: 1642854703:0;cd Downloads
+: 1642854706:0;gh repo clone vinceliuice/Tela-icon-theme
+: 1642854744:0;cd Tela-icon-theme
+: 1642854750:0;sudo ./install.sh
+: 1642857035:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642857934:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642857941:0;code .
+: 1642858028:0;sudo ./docker.sh
+: 1642862440:0;git add .
+: 1642862454:0;git commit -m "feat: finish promotion detail"
+: 1642862459:0;git push
+: 1642866839:0;git add .
+: 1642866850:0;git commit -m "feat: responsivinnes"
+: 1642866852:0;git push
+: 1642867731:0;git add .
+: 1642867750:0;git commit -m "chore: adjust variables names"
+: 1642867752:0;git push
+: 1642869074:0;git add .
+: 1642869085:0;git commit -m "test: finish tests"
+: 1642869087:0;git push
+: 1642869323:0;git pull
+: 1642881157:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642881252:0;code .
+: 1642882606:0;sudo ./docker.sh
+: 1642886089:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642887485:0;neofetch
+: 1642911110:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642911162:0;sudo apt autoremove -y
+: 1642942070:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update 
+: 1642942109:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642942113:0;code .
+: 1642942183:0;sudo ./docker.sh
+: 1642944816:0;git add .
+: 1642944840:0;git commit -m "feat: adjust variables names"
+: 1642944842:0;git push
+: 1642944853:0;gh pr create
+: 1642963647:0;sudo apt update -y && sudo apt full-upgrade -y && flatpak update && sudo apt autoremove -y
+: 1642977849:0;ls -la
+: 1642977864:0;cd .config
+: 1642977867:0;ls -la
+: 1642978417:0;sudo cp ~/.config/monitors.xml ~gdm/.config/
+: 1642979113:0;zinit update
+: 1642979168:0;cd Documentos/GitHub/tdb/minha-cesta-app
+: 1642979175:0;code .
+: 1642979310:0;sudo ./docker.sh
+: 1642983363:0;git add .
+: 1642983383:0;git commit -m "feat: finish cupons responsivines"
+: 1642983385:0;git push
+: 1642983919:0;git add .
+: 1642983934:0;git commit -m "test: finish cupon tests"
+: 1642983937:0;git push
+: 1642985746:0;git add .
+: 1642985758:0;git commit -m "feat: finish menu tab"
+: 1642985762:0;git push
+: 1642985852:0;gh pr create
+: 1642986288:0;neofetch
+: 1642988043:0;flatpak install flathub org.gabmus.hydrapaper
+: 1642989078:0;cd Documentos/GitHub/pessoal
+: 1642989081:0;ls -la
+: 1642989089:0;cd the-lonely-mountain
+: 1642989092:0;code .
