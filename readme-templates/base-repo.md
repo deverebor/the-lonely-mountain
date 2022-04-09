@@ -3,12 +3,12 @@
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui
 
 O segundo parametro é o nome do repo -->
-
 ![GitHub repo size](https://https://img.shields.io/github/repo-size/deverebor/deverebor?style=for-the-badge) 
-![GitHub language count](https://img.shields.io/github/languages/count/deverebor/deverebor?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/deverebor/ecomerce-api?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/deverebor/deverebor?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/deverebor/deverebor?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/deverebor/deverebor?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/deverebor/deverebor?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/deverebor/deverebor?style=for-the-badge)
+
 
 <img src="exemplo-image.png" alt="exemplo imagem">
 
